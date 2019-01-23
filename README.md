@@ -1,2 +1,0 @@
-# petervansark
-Portfolio and Résumé
