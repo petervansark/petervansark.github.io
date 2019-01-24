@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Peter van Sark",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petervansark/petervansark.github.io.git"
+  },
+  "author": "Peter van Sark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petervansark/petervansark.github.io/issues"
+  },
+  "homepage": "https://github.com/petervansark/petervansark.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-sass": "^4.11.0"
+  }
+}
