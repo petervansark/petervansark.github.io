@@ -3,6 +3,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+const livereload = require('gulp-livereload');
 
 sass.compiler = require('node-sass');
 
@@ -16,7 +17,8 @@ cascade: false
 }))
 .pipe(cleanCSS())
 .pipe(sourcemaps.write())
-.pipe(gulp.dest('./css/'));
+.pipe(gulp.dest('./css/'))
+.pipe(livereload());
 });
 
 // gulp.task('default', gulp.series(sass));

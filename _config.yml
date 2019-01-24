@@ -1,0 +1,11 @@
+# Site settings
+title: Portfolio Peter van Sark
+email: peter@vansark.com
+author: Peter van Sark
+description: Portfolio website of Peter van Sark
+url: http://petervansark.github.io/
+
+# Build settings
+lay-out: default
+permalink: :title/
+exclude: ["gulpfile.js","package.json","package-lock.json","node_modules",".gitignore"]
