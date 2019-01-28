@@ -6,6 +6,12 @@ description: Portfolio website of Peter van Sark
 url: http://petervansark.github.io/
 
 # Build settings
-lay-out: default
-permalink: :title/
-exclude: ["gulpfile.js","package.json","package-lock.json","node_modules",".gitignore"]
+lay-out: home 
+permalin: :title/
+exclude: 
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - node_modules
+  - .gitignore
+
