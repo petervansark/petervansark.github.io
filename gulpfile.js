@@ -3,9 +3,20 @@ const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-const livereload = require('gulp-livereload');
+var browserSync = require('browser-sync').create();
+const shell = require('gulp-shell');
 
 sass.compiler = require('node-sass');
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./_site"
+        }
+    });
+});
+
+gulp.task('jekyll-watch', shell.task(['jekyll build --watch --incremental']));
 
 gulp.task('default', () => {
 return gulp.src('./_sass/**/*.scss')
@@ -18,11 +29,18 @@ return gulp.src('./_sass/**/*.scss')
 .pipe(cleanCSS())
 .pipe(sourcemaps.write())
 .pipe(gulp.dest('./css/'))
-.pipe(livereload());
 });
 
 // gulp.task('default', gulp.series(sass));
 
 gulp.task('default:watch', function () {
-gulp.watch('./_sass/**/*.scss', gulp.series('default'));
+    
+    // browserSync.init({
+    //     server: {
+    //         baseDir: "./_site"
+    //     }
+    // });
+
+    gulp.watch('./_sass/**/*.scss', gulp.series('default'));
+    gulp.watch("_site/*.*").on('change', browserSync.reload);
 });
