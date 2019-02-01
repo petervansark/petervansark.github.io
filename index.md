@@ -1,3 +1,5 @@
 ---
-layout: home
+layout: page 
 ---
+
+Will follow soon...
