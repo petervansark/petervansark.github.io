@@ -8,15 +8,15 @@ const shell = require('gulp-shell');
 
 sass.compiler = require('node-sass');
 
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./_site"
-        }
-    });
-});
+// gulp.task('browser-sync', function() {
+//     browserSync.init({
+//         server: {
+//             baseDir: "./_site"
+//         }
+//     });
+// });
 
-gulp.task('jekyll-watch', shell.task(['jekyll build --watch --incremental']));
+gulp.task('jekyll-build', shell.task(['jekyll build --watch --incremental']));
 
 gulp.task('default', () => {
 return gulp.src('./_sass/**/*.scss')
@@ -35,12 +35,16 @@ return gulp.src('./_sass/**/*.scss')
 
 gulp.task('default:watch', function () {
     
-    // browserSync.init({
-    //     server: {
-    //         baseDir: "./_site"
-    //     }
-    // });
+    browserSync.init({
+        server: {
+            baseDir: "./_site"
+        }
+    });
 
     gulp.watch('./_sass/**/*.scss', gulp.series('default'));
-    gulp.watch("_site/*.*").on('change', browserSync.reload);
+    gulp.watch("./**/*.*", gulp.series('jekyll-build'));
+    gulp.watch("_site/**/*.*").on('change', browserSync.reload);
+
+    gulp.series('jekyll-build');
+
 });
