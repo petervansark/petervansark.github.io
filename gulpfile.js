@@ -8,43 +8,34 @@ const shell = require('gulp-shell');
 
 sass.compiler = require('node-sass');
 
-// gulp.task('browser-sync', function() {
-//     browserSync.init({
-//         server: {
-//             baseDir: "./_site"
-//         }
-//     });
-// });
-
-gulp.task('jekyll-build', shell.task(['jekyll build --watch --incremental']));
-
-gulp.task('default', () => {
-return gulp.src('./_sass/**/*.scss')
-.pipe(sourcemaps.init())
-.pipe(sass().on('error', sass.logError))
-.pipe(autoprefixer({
-    browsers: ['last 2 versions'],
-    cascade: false
-}))
-.pipe(cleanCSS())
-.pipe(sourcemaps.write())
-.pipe(gulp.dest('./css/'))
-});
-
-// gulp.task('default', gulp.series(sass));
-
-gulp.task('default:watch', function () {
-    
+gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
             baseDir: "./_site"
         }
     });
+});
 
-    gulp.watch('./_sass/**/*.scss', gulp.series('default'));
-    gulp.watch("./**/*.*", gulp.series('jekyll-build'));
+gulp.task('jekyll-build', shell.task(['jekyll build --watch --incremental']));
+
+gulp.task('css', () => {
+return gulp.src('./_sass/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./css/'))
+});
+
+gulp.task('watch', () => {
+    
+    gulp.watch('./_sass/**/*.scss', gulp.series('css'));
     gulp.watch("_site/**/*.*").on('change', browserSync.reload);
 
-    gulp.series('jekyll-build');
-
 });
+
+gulp.task('serve', gulp.parallel('watch','browser-sync','jekyll-build'))
