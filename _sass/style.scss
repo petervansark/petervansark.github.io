@@ -1,3 +1,9 @@
+/* ============= VARIABLES =============== */
+
+$breakpoint: 800px;
+
+
+
 /* ============= BASIC RESET ===============  */
 
  * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -187,20 +193,98 @@
 /* =============== LAYOUT =============== */
 
 html {
-    line-height: 1.15;
+    font-size: 100%;
+    font-family: monaco,Consolas,Lucida Console,monospace;
 }
 
 body {
     overflow: hidden;
 }
 
-nav {
-    transition: all .4s ease;
+section#slide {
+    transition: all .8s ease;
     position: fixed;
     display: flex;
-    height: 100vh;
+    z-index: 100;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 5px 5px 7px #eee;
+    justify-content: space-between;
+    will-change: contents;
+    
+    @media (min-width: $breakpoint) {
+        height: 100vh;
+        left: 0;
+        top: 0;
+        width: 50px;
+
+        button {
+            height: 100vh;
+            width: 50px;
+        }
+
+        &.open {
+            width: 350px;
+        }
+    }
+
+    @media (max-width: $breakpoint - 1) {
+        width: 100vw;
+        left: 0;
+        top: 0;
+        height: 50px;
+
+        button {
+            width: 100vw;
+            height: 50px;
+        }
+
+        &.open {
+            height: 350px;
+        }
+    }
+
+    nav{
+        transition: all .8s ease;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        align-self: center;
+        width: 0px;
+        ul.menu {
+
+        }
+    }
+
+
+
+    &.open {
+        // width: 350px;
+        nav 
+        {
+            transition: all .8s ease;
+            visibility: visible;
+            opacity: 1;
+            display: flex;
+            align-content: center;
+            // width: 250px;
+            ul.menu {
+
+            }
+
+        }
+        button {
+            align-self: end;
+        }
+    }
+
 }
 
 article {
-
+    padding: 2rem 4rem;
 }
+
+
+
+
+
