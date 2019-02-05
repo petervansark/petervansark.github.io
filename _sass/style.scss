@@ -1,7 +1,19 @@
+/* ============= TODO ============== 
+
+- Ajax nav
+- Jekyll portfolio layout
+- Ajax: update URL
+- Styling
+- responsive images
+- transpile js (babel?)
+- cross-browser/device testing
+- caching setup and final opti
+
+*/
+
 /* ============= VARIABLES =============== */
 
 $breakpoint: 800px;
-
 
 
 /* ============= BASIC RESET ===============  */
@@ -233,10 +245,12 @@ section#slide {
         left: 0;
         top: 0;
         height: 50px;
+        flex-direction: column;
 
         button {
             width: 100vw;
             height: 50px;
+            // align-self: end;
         }
 
         &.open {
@@ -250,16 +264,29 @@ section#slide {
         visibility: hidden;
         display: flex;
         align-self: center;
-        width: 0px;
+        width: 0;
+        @media (max-width: $breakpoint - 1) {
+            width: 100%;
+        }
+        height: 0px;
         ul.menu {
-
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            width: 100%;
+            li {
+                width: 100%;
+                a {
+                    width: 100%;
+                    // flex-basis: 100%;
+                }
+            }
         }
     }
 
 
 
     &.open {
-        // width: 350px;
         nav 
         {
             transition: all .8s ease;
@@ -267,15 +294,14 @@ section#slide {
             opacity: 1;
             display: flex;
             align-content: center;
-            // width: 250px;
+            width: 100%;
+            height: auto;
             ul.menu {
 
             }
 
         }
-        button {
-            align-self: end;
-        }
+    
     }
 
 }
