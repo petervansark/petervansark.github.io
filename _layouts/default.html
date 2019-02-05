@@ -9,8 +9,11 @@
     <script>{% include main.js %}</script>
 </head>
 <body>
-    {% include menu.html %}
-    <hr>
-    {{ content }}
+    <nav>
+        {% include menu.html %}
+    </nav>
+    <article>
+        {{ content }}
+    </article>
 </body>
 </html>
