@@ -16,4 +16,4 @@ exclude:
   - node_modules
   - .gitignore
   - _sass
-
+  - assets/src

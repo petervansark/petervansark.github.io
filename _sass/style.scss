@@ -198,7 +198,8 @@ html {
 }
 
 body {
-    overflow: hidden;
+    // overflow: hidden;
+    overflow-x: hidden;
 }
 
 section#slide {
@@ -294,11 +295,41 @@ section#slide {
 
 }
 
-article {
+section#body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  
+  > article {
+    text-align: left;
     padding: 2rem 4rem;
+    
+    section#portfolio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        > article {
+          text-align: left;
+          max-width: 450px;
+          word-wrap: break-word;
+        }
+      }
+
+    }
+
+    img {
+      max-width: 100%;
+    }
+
 }
 
-
-
-
+ul.slideshow {
+  list-style: none;
+  li {
+    display: inline;
+  }
+}
 

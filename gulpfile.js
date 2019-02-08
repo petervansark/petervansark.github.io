@@ -5,16 +5,49 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
 const shell = require('gulp-shell');
+const responsive = require('gulp-responsive');
 
 sass.compiler = require('node-sass');
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', () => {
     browserSync.init({
         server: {
             baseDir: "./_site"
         }
     });
 });
+
+gulp.task('images', () => {
+    return gulp.src('./assets/src/*.jpg')
+    .pipe(responsive({
+        '*.jpg': [
+                {
+                width: 800,
+                format: 'jpeg',
+                rename: { suffix: '-800px' },
+            }, {
+                width: 1200,
+                format: 'jpeg',
+                rename: { suffix: '-1200px' },
+            },
+            {
+                width: 800,
+                format: 'webp',
+                rename: { suffix: '-800px' },
+            },
+            {
+                width: 1200,
+                format: 'webp',
+                rename: { suffix: '-1200px' },
+            }
+        ]
+      }, {
+        quality: 80,
+        progressive: true,
+        withMetadata: false,
+      }))
+      .pipe(gulp.dest('./assets/optimized/'));
+  });
 
 gulp.task('jekyll-build', shell.task(['jekyll build --watch --incremental']));
 

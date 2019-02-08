@@ -6,7 +6,13 @@ layout: default
    <ul>
     {% for post in site.posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ post.url }}">
+            <picture class="hero">
+                <source srcset="/assets/optimized/{{post.hero}}-800px.jpeg" type="image/jpeg">
+                <source srcset="/assets/optimized/{{post.hero}}-800px.webp" type="image/webp">
+                <img src="/assets/optimized/{{page.hero}}-800px.jpeg">
+            </picture> 
+       <h2>  {{ post.title }} </h2></a>
       </li>
     {% endfor %}
   </ul>
