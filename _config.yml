@@ -4,6 +4,7 @@ email: peter@vansark.com
 author: Peter van Sark
 description: Portfolio website of Peter van Sark
 url: http://petervansark.github.io/
+permalink: /:categories/:title:output_ext
 
 # Build settings
 lay-out: default 

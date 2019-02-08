@@ -2,10 +2,13 @@
 menu:
 
 - title: Home
-  link: 
+  link: / 
+
+- title: Portfolio
+  link: /portfolio.html
 
 - title: About me
-  link: 
+  link: /about.html
 
 - title: Contact
-  link: 
+  link: /contact.html
