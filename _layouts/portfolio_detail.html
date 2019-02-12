@@ -18,12 +18,17 @@ layout: default
     
     <ul class="slideshow">
         {% for item in page.slider %}
-            <li><img src="{{ item }}"></li>
+        <li>
+            <picture class="slide-item">
+                <source media="(max-width: 800px)" srcset="{{ item }}" type="image/jpeg"> 
+                <img src="{{ item }}">
+            </picture>
+        </li>
         {% endfor %}
     </ul>
     
     <ul class="details">
-        <li>Link: <a href="{{page.link}}">{{page.link}}</a></li>
+        <li>Link: <a target="_blank" href="{{page.link}}">{{page.title}}</a></li>
         <li>Ontwerp door: {{page.design}}</li>
     </ul>
     

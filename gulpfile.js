@@ -17,18 +17,29 @@ gulp.task('browser-sync', () => {
     });
 });
 
-gulp.task('images', () => {
-    return gulp.src('./assets/src/*.jpg')
+gulp.task('images-scale', () => {
+    return gulp.src('./assets/src/*-hero.jpg')
     .pipe(responsive({
         '*.jpg': [
+            {
+                width: 400,
+                format: 'jpeg',
+                rename: { suffix: '-400px' },
+            }, 
                 {
                 width: 800,
                 format: 'jpeg',
                 rename: { suffix: '-800px' },
             }, {
                 width: 1200,
+                height: 600,
                 format: 'jpeg',
                 rename: { suffix: '-1200px' },
+            },
+            {
+                width: 400,
+                format: 'webp',
+                rename: { suffix: '-400px' },
             },
             {
                 width: 800,
@@ -37,6 +48,7 @@ gulp.task('images', () => {
             },
             {
                 width: 1200,
+                height: 600,
                 format: 'webp',
                 rename: { suffix: '-1200px' },
             }
@@ -71,4 +83,6 @@ gulp.task('watch', () => {
 
 });
 
-gulp.task('serve', gulp.parallel('watch','browser-sync','jekyll-build'))
+gulp.task('serve', gulp.parallel('watch','browser-sync','jekyll-build'));
+
+gulp.task('images', gulp.series('images-scale'));

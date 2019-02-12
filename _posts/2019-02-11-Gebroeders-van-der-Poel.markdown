@@ -1,19 +1,19 @@
 ---
 
 layout: portfolio_detail
-title:  "Dobbe Transport"
+title:  "Loon- en aannemersbedrijf Gebr. van der Poel"
 category: portfolio
-hero: dobbe-hero
+hero: gebrvdpoel-hero
 slider: 
  - /assets/placeholder-250.jpg
  - /assets/placeholder-250.jpg
  - /assets/placeholder-250.jpg
-link: https://www.dobbetransport.com/
+link: https://www.gebrvdpoel.nl/
 design: Windkracht 10
 
 ---
 
-Website voor Dobbe Transport.
+Website voor Gebroedrs van der Poel.
 
 Implementatie op basis van functioneel ontwerp en grafisch ontwerp.
 

@@ -295,29 +295,62 @@ section#slide {
 
 }
 
-section#body {
+main#body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   
   > article {
     text-align: left;
     padding: 2rem 4rem;
-    
-    section#portfolio {
+  }
+
+      section#portfolio {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          > article {
+            text-align: left;
+            max-width: 450px;
+            word-wrap: break-word;
+          }
+        }
+
+    ul.portfolio {
+      li {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        width: 100vw;
         align-items: center;
-        flex-direction: column;
+
+        &:nth-child(odd) {
+          flex-direction: row;
+        }
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+          background: #eee;
+        }
+
+        > a {
+          flex-basis: 50%;
+          text-align: center;
+        }
+
         > article {
-          text-align: left;
-          max-width: 450px;
-          word-wrap: break-word;
+        
+          a {
+            text-transform: none;
+          }
+
+          text-align: center;
+          flex-basis: 50%;
+        
         }
       }
-
     }
 
     img {
@@ -333,3 +366,16 @@ ul.slideshow {
   }
 }
 
+/* ================= MEDIAQUERIES ================ */
+
+@media (max-width: $breakpoint - 1) {
+
+  main#body {
+
+    > article {
+      text-align: left;
+      padding: 3rem 2rem 2rem 2rem;
+    }
+  }
+
+}

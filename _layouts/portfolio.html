@@ -3,16 +3,21 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 
-   <ul>
+   <ul class="portfolio">
     {% for post in site.posts %}
       <li>
           <a href="{{ post.url }}">
-            <picture class="hero">
+            <picture class="intro">
                 <source srcset="/assets/optimized/{{post.hero}}-800px.jpeg" type="image/jpeg">
                 <source srcset="/assets/optimized/{{post.hero}}-800px.webp" type="image/webp">
                 <img src="/assets/optimized/{{page.hero}}-800px.jpeg">
             </picture> 
-       <h2>  {{ post.title }} </h2></a>
+          </a>
+            <article>
+              <a href="{{ post.url }}">
+                <h2>{{ post.title }}</h2>
+              </a>
+            </article>
       </li>
     {% endfor %}
   </ul>
