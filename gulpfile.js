@@ -61,6 +61,25 @@ gulp.task('images-scale', () => {
       .pipe(gulp.dest('./assets/optimized/'));
   });
 
+  gulp.task('image-webp', () => {
+    return gulp.src('./assets/*.png')
+    .pipe(responsive({
+        '*.png': [
+            {
+                format: 'png'
+            },
+            {
+                format: 'webp'
+            }
+        ]
+      }, {
+        quality: 80,
+        progressive: true,
+        withMetadata: false,
+      }))
+      .pipe(gulp.dest('./assets/optimized/'));
+  });
+
 gulp.task('jekyll-build', shell.task(['jekyll build --watch --incremental']));
 
 gulp.task('css', () => {

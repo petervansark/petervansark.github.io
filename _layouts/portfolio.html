@@ -7,11 +7,8 @@ layout: default
     {% for post in site.posts %}
       <li>
           <a href="{{ post.url }}">
-            <picture class="intro">
-                <source srcset="/assets/optimized/{{post.hero}}-800px.jpeg" type="image/jpeg">
-                <source srcset="/assets/optimized/{{post.hero}}-800px.webp" type="image/webp">
-                <img src="/assets/optimized/{{page.hero}}-800px.jpeg">
-            </picture> 
+              {% capture hero_image %}{{post.hero}}{% endcapture %}
+              {% include mockup.html image=hero_image %}
           </a>
             <article>
               <a href="{{ post.url }}">
