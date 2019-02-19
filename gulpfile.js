@@ -66,10 +66,34 @@ gulp.task('images-scale', () => {
     .pipe(responsive({
         '*.png': [
             {
-                format: 'png'
+                width: '25%',
+                format: 'png',
+                rename: { suffix: '-25per' }
             },
             {
-                format: 'webp'
+                width: '50%',
+                format: 'png',
+                rename: { suffix: '-50per' }
+            },
+            {
+                width: '100%',
+                format: 'png',
+                rename: { suffix: '-100per' }
+            },
+            {
+                width: '25%',
+                format: 'webp',
+                rename: { suffix: '-25per' }
+            },
+            {
+                width: '50%',
+                format: 'webp',
+                rename: { suffix: '-50per' }
+            },
+            {
+                width: '100%',
+                format: 'webp',
+                rename: { suffix: '-100per' }
             }
         ]
       }, {
@@ -104,4 +128,4 @@ gulp.task('watch', () => {
 
 gulp.task('serve', gulp.parallel('watch','browser-sync','jekyll-build'));
 
-gulp.task('images', gulp.series('images-scale'));
+gulp.task('images', gulp.series('images-scale','image-webp'));

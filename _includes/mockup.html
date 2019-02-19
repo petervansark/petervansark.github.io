@@ -1,7 +1,22 @@
 
+<section class="mockup">
+    
+    <picture>
+        <source srcset="/assets/optimized/macbook-screen-25per.png" type="image/png">
+        <source srcset="/assets/optimized/macbook-screen-50per.webp" type="image/webp">
+        <img src="/assets/optimized/macbook-screen-25per.png" class="screen" style="background-image: url('/assets/optimized/{{include.image}}-800px.jpeg');">
+    </picture> 
 
-            <picture class="intro">
-                <source srcset="/assets/optimized/{{include.image}}-800px.jpeg" type="image/jpeg">
-                <source srcset="/assets/optimized/{{include.image}}-800px.webp" type="image/webp">
-                <img src="/assets/optimized/{{include.image}}-800px.jpeg">
-            </picture> 
+    <picture>
+        <source srcset="/assets/optimized/macbook-key-25per.png" type="image/png">
+        <source srcset="/assets/optimized/macbook-key-25per.webp" type="image/webp">
+        <img src="/assets/optimized/macbook-key-25per.png"  class="keyboard">
+    </picture>
+
+<!-- <picture>
+    <source srcset="/assets/optimized/{{include.image}}-800px.jpeg" type="image/jpeg">
+    <source srcset="/assets/optimized/{{include.image}}-800px.webp" type="image/webp">
+    <img src="/assets/optimized/{{include.image}}-800px.jpeg" class="intro">
+</picture>  -->
+
+</section>

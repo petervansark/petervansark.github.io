@@ -321,10 +321,16 @@ main#body {
 
     ul.portfolio {
       li {
+        padding: 4rem 0;
         display: flex;
         justify-content: space-around;
         width: 100vw;
         align-items: center;
+
+        @media (max-width: $breakpoint) {
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
 
         &:nth-child(odd) {
           flex-direction: row;
@@ -338,6 +344,9 @@ main#body {
         > a {
           flex-basis: 50%;
           text-align: center;
+          @media (max-width: $breakpoint) {
+            flex-basis: 100%;
+          }
         }
 
         > article {
@@ -349,12 +358,38 @@ main#body {
           text-align: center;
           flex-basis: 50%;
         
+          @media (max-width: $breakpoint) {
+            flex-basis: 100%;
+          }
         }
       }
     }
 
     img {
       max-width: 100%;
+      display: block;
+    }
+
+    .mockup {
+      text-align: center;
+      img {
+        margin: 0 auto;
+        &.keyboard {
+          filter: drop-shadow(0px 5px 3px #969696);
+          // max-width: none;
+        }
+        &.screen {
+          max-width: 80%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: -10px 15px;
+          @media (max-width: $breakpoint) {
+            background-position: -5px 7px;
+          }
+          
+        }
+      }
+
     }
 
 }

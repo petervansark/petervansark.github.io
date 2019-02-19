@@ -2,13 +2,24 @@
 layout: default
 ---
 
-<picture class="hero">
-    <source media="(max-width: 800px)" srcset="/assets/optimized/{{page.hero}}-800px.jpeg" type="image/jpeg">
-    <source media="(min-width: 800px)" srcset="/assets/optimized/{{page.hero}}-1200px.jpeg" type="image/jpeg">
-    <source media="(max-width: 800px)" srcset="/assets/optimized/{{page.hero}}-800px.webp" type="image/webp">
-    <source media="(min-width: 800px)" srcset="/assets/optimized/{{page.hero}}-1200px.webp" type="image/webp">
-    <img src="/assets/optimized/{{page.hero}}-1200px.jpeg">
-</picture> 
+    <!-- <picture>
+        <source media="(max-width: 800px)" srcset="/assets/optimized/macbook-screen-25per.png" type="image/png">
+        <source media="(min-width: 800px)" srcset="/assets/optimized/macbook-screen-50per.png" type="image/png">
+        <source media="(max-width: 800px)" srcset="/assets/optimized/macbook-screen-25per.webp" type="image/webp">
+        <source media="(min-width: 800px)" srcset="/assets/optimized/macbook-screen-50per.webp" type="image/webp">
+        <img src="/assets/optimized/macbook-screen-25per.png" class="screen">
+    </picture> 
+
+    <picture>
+            <source media="(max-width: 800px)" srcset="/assets/optimized/macbook-key-25per.png" type="image/png">
+            <source media="(min-width: 800px)" srcset="/assets/optimized/macbook-key-50per.png" type="image/png">
+            <source media="(max-width: 800px)" srcset="/assets/optimized/macbook-key-25per.webp" type="image/webp">
+            <source media="(min-width: 800px)" srcset="/assets/optimized/macbook-key-50per.webp" type="image/webp">
+            <img src="/assets/optimized/macbook-key-25per.png"  class="keyboard">
+    </picture> -->
+
+              {% capture hero_image %}{{page.hero}}{% endcapture %}
+              {% include mockup.html image=hero_image %}
 
 <article>
 
