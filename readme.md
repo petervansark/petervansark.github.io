@@ -1,11 +1,11 @@
 ============= TODO ============== 
 
-- create first content
-- Ajax nav
-- Jekyll portfolio layout
-- Ajax: update URL
-- Styling
-- responsive images / video's
-- transpile js?
-- cross-browser/device testing
-- caching setup and final opti
+[x] Jekyll portfolio layout
+[] responsive images / video's
+[] Ajax nav
+[] Ajax: update URL
+[] create content
+[] CSS Styling
+[] cross-browser/device testing
+[] caching setup and final opti
+[] transpile js?

@@ -19,7 +19,7 @@ layout: default
     </picture> -->
 
               {% capture hero_image %}{{page.hero}}{% endcapture %}
-              {% include mockup.html image=hero_image %}
+              {% include mockup_detail.html image=hero_image %}
 
 <article>
 
@@ -27,7 +27,7 @@ layout: default
     
         {{content}}
     
-    <ul class="slideshow">
+    <!-- <ul class="slideshow">
         {% for item in page.slider %}
         <li>
             <picture class="slide-item">
@@ -36,7 +36,7 @@ layout: default
             </picture>
         </li>
         {% endfor %}
-    </ul>
+    </ul> -->
     
     <ul class="details">
         <li>Link: <a target="_blank" href="{{page.link}}">{{page.title}}</a></li>

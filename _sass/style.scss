@@ -2,7 +2,13 @@
 /* ============= VARIABLES =============== */
 
 $breakpoint: 800px;
+$font-color: #666;
+$font-size: 15px;
+$highlight-color: #000;
 
+@mixin animate {
+  transition: all .8s ease; 
+}
 
 /* ============= BASIC RESET ===============  */
 
@@ -194,7 +200,23 @@ $breakpoint: 800px;
 
 html {
     font-size: 100%;
-    font-family: monaco,Consolas,Lucida Console,monospace;
+    color: $font-color;
+    font: $font-size helvetica,arial,freesans,clean,sans-serif;
+    line-height: 1.4;
+}
+
+a,
+a:link {
+  color: $font-color;
+  text-decoration: none;
+  @include animate();
+  
+  &:hover,
+  &:active {
+    color: $highlight-color;
+    text-decoration: none;
+    @include animate();
+  }
 }
 
 body {
@@ -301,10 +323,19 @@ main#body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  padding-left: 50px;
+
+  @media (max-width: $breakpoint - 1) {
+    padding-left: 0px;
+    padding-top: 50px;
+  }
   
   > article {
     text-align: left;
     padding: 2rem 4rem;
+  }
+  > .mockup {
+    margin-top: 2rem;
   }
 
       section#portfolio {
@@ -372,21 +403,39 @@ main#body {
 
     .mockup {
       text-align: center;
+      position: relative;
       img {
+        // max-width: none;
         margin: 0 auto;
         &.keyboard {
-          filter: drop-shadow(0px 5px 3px #969696);
+          filter: drop-shadow(0px 3px 3px #969696);
           // max-width: none;
+          max-width: 100%;
+          position: relative;
+          z-index: 1;
         }
         &.screen {
           max-width: 80%;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: -10px 15px;
-          @media (max-width: $breakpoint) {
-            background-position: -5px 7px;
-          }
+          z-index: 1;
+          position: relative;
+          // background-size: cover;
+          // background-repeat: no-repeat;
+          // background-position: -10px 15px;
+          // @media (max-width: $breakpoint) {
+          //   background-position: -5px 7px;
+          // }
           
+        }
+        &.content {
+          position: absolute;
+          top: 10px;
+          left: 0;
+          right: 0;
+          max-width: 80%;
+          height: auto;
+          z-index: 0;
+          // width: 100%;
+          border-radius: 20px;
         }
       }
 

@@ -22,35 +22,40 @@ gulp.task('images-scale', () => {
     .pipe(responsive({
         '*.jpg': [
             {
-                width: 400,
+                width: 500,
                 format: 'jpeg',
-                rename: { suffix: '-400px' },
+                height: 330,
+                rename: { suffix: '-500px' }
             }, 
                 {
-                width: 800,
+                width: 980,
+                height: 660,
                 format: 'jpeg',
-                rename: { suffix: '-800px' },
-            }, {
-                width: 1200,
-                height: 600,
+                rename: { suffix: '-1000px' }
+            },
+            {
+                width: 1400,
+                height: 990,
                 format: 'jpeg',
-                rename: { suffix: '-1200px' },
+                rename: { suffix: '-1500px' }
             },
             {
-                width: 400,
+                width: 500,
+                height: 330,
                 format: 'webp',
-                rename: { suffix: '-400px' },
+                rename: { suffix: '-500px' }
             },
             {
-                width: 800,
+                width: 980,
                 format: 'webp',
-                rename: { suffix: '-800px' },
+                height: 660,
+                rename: { suffix: '-1000px' }
             },
             {
-                width: 1200,
-                height: 600,
+                width: 1400,
+                height: 990,
                 format: 'webp',
-                rename: { suffix: '-1200px' },
+                rename: { suffix: '-1500px' }
             }
         ]
       }, {

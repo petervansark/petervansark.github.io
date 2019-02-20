@@ -2,21 +2,21 @@
 <section class="mockup">
     
     <picture>
-        <source srcset="/assets/optimized/macbook-screen-25per.png" type="image/png">
-        <source srcset="/assets/optimized/macbook-screen-50per.webp" type="image/webp">
-        <img src="/assets/optimized/macbook-screen-25per.png" class="screen" style="background-image: url('/assets/optimized/{{include.image}}-800px.jpeg');">
+        <source srcset="/assets/optimized/{{include.image}}-500px.jpeg, /assets/optimized/{{include.image}}-1000px.jpeg 2x" type="image/jpg">
+        <source srcset="/assets/optimized/{{include.image}}-500px.webp, /assets/optimized/{{include.image}}-1000px.webp 2x" type="image/webp">
+        <img src="/assets/optimized/{{include.image}}-500px.jpeg, /assets/optimized/{{include.image}}-1000px.jpeg 2x" class="content">
     </picture> 
 
     <picture>
-        <source srcset="/assets/optimized/macbook-key-25per.png" type="image/png">
-        <source srcset="/assets/optimized/macbook-key-25per.webp" type="image/webp">
-        <img src="/assets/optimized/macbook-key-25per.png"  class="keyboard">
-    </picture>
+        <source srcset="/assets/optimized/macbook-screen-25per.png, /assets/optimized/macbook-screen-50per.png 2x" type="image/png">
+        <source srcset="/assets/optimized/macbook-screen-25per.webp, /assets/optimized/macbook-screen-50per.webp 2x" type="image/webp">
+        <img src="/assets/optimized/macbook-screen-25per.png, /assets/optimized/macbook-screen-50per.png 2x" class="screen">
+    </picture> 
 
-<!-- <picture>
-    <source srcset="/assets/optimized/{{include.image}}-800px.jpeg" type="image/jpeg">
-    <source srcset="/assets/optimized/{{include.image}}-800px.webp" type="image/webp">
-    <img src="/assets/optimized/{{include.image}}-800px.jpeg" class="intro">
-</picture>  -->
+    <picture>
+        <source srcset="/assets/optimized/macbook-key-25per.png, /assets/optimized/macbook-key-50per.png 2x" type="image/png">
+        <source srcset="/assets/optimized/macbook-key-25per.webp, /assets/optimized/macbook-key-50per.webp 2x" type="image/webp">
+        <img src="/assets/optimized/macbook-key-25per.png, /assets/optimized/macbook-key-50per.png 2x"  class="keyboard">
+    </picture>
 
 </section>
