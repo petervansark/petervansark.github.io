@@ -7,7 +7,7 @@ $font-size: 15px;
 $highlight-color: #000;
 
 @mixin animate {
-  transition: all .8s ease; 
+  transition: all 0.5s linear; 
 }
 
 /* ============= BASIC RESET ===============  */
@@ -225,7 +225,7 @@ body {
 }
 
 section#slide {
-    transition: all .8s ease;
+    transition: width 0.8s ease 0.5s, height 0.8s ease 0.5s;
     position: fixed;
     display: flex;
     z-index: 100;
@@ -240,8 +240,15 @@ section#slide {
       background: transparent;
       border-radius: 0;
       border: none;
+      
+      &:hover {
+        svg {
+          fill: #000;
+        }
+      }
       svg {
         fill: #666;
+        @include animate();
       }
     }
     
@@ -258,28 +265,55 @@ section#slide {
       
       &.open {
         width: 350px;
+        nav {
+        //   height: 100vh;
+        //   ul.menu {
+        //     height: 80vh;
+        //     li {
+        //       padding-left: 30px;
+        //     }
+        //   }
+        }
       }
-    }
+
+      nav {
+        height: 100vh;;
+        ul.menu {
+          height: 60vh;          
+          li {
+            padding-left: 30px;
+          }
+        }
+      }
+
+    } // end desktop
     
     nav{
-      transition: all .8s ease;
+      transition: opacity 0.5s linear 0s;
       opacity: 0;
       visibility: hidden;
       display: flex;
       align-self: center;
       width: 0;
-      height: 0px;
+      // height: 0px;
+      height: auto;
 
       ul.menu {
           display: flex;
           flex-direction: column;
           list-style: none;
           width: 100%;
+          justify-content: space-around;
+          transition: opacity .5s linear 0s;
           li {
               width: 100%;
+              white-space: nowrap;
               text-align: left;
               a {
                   width: 100%;
+                  font-size: 28px;
+                  font-weight: 600;
+                  white-space: nowrap;
               }
           }
       }
@@ -287,18 +321,34 @@ section#slide {
   } // end nav
 
       &.open {
-        nav 
+        transition: width 0.8s ease 0s;
+        nav
         {
-            transition: all .8s ease;
+            transition: opacity 0.5s linear 0.5s;
             visibility: visible;
             opacity: 1;
             display: flex;
             align-content: center;
             width: 100%;
             height: auto;
-            ul.menu {
 
-            }
+            ul.menu {
+              display: flex;
+              flex-direction: column;
+              list-style: none;
+              width: 100%;
+              justify-content: space-around;
+              
+              li {
+                width: 100%;
+                white-space: nowrap;
+                    a {
+                        width: 100%;
+                        white-space: nowrap;
+                    }
+                }
+
+            } 
 
         }
  
@@ -319,11 +369,15 @@ section#slide {
         }
 
        nav {
-          // height: 100%;
+          transition: opacity 0.5s linear 0s, height 0.5s linear 1s;
+          height: 0px;
           width: 100%;
             ul.menu {
               justify-content: space-around;
+              transition: opacity 0.5s linear 0s, height 0.5s linear 1s;
+              // height: 300px;
               li {
+                transition: opacity 0.5s linear 0s, height 0.5s linear 1s;
                 text-align: center;
                   a {
 
@@ -334,6 +388,14 @@ section#slide {
 
         &.open {
             height: 350px;
+            nav {
+              transition: opacity 0.5s linear 0.5s;
+              height: 300px;
+                ul.menu {
+                  transition: opacity 0.5s linear 0.5s;
+                  height: 300px;
+             }
+          }
         }
     } // end mobile breakpoint
 
@@ -375,7 +437,7 @@ main#body {
 
     ul.portfolio {
       li {
-        padding: 4rem 0;
+        padding: 4rem 2rem;
         display: flex;
         justify-content: space-around;
         width: 100vw;
@@ -468,7 +530,23 @@ main#body {
 
     }
 
-}
+  a.button {
+    margin: 10px 0px;
+    padding: 10px 25px;
+    background: #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    &:hover {
+      background: #333;
+      color: #fff;
+    }
+  }
+
+  ul.details {
+    list-style: none;
+  }
+
+} // end main#body
 
 ul.slideshow {
   list-style: none;

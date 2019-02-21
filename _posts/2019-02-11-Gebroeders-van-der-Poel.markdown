@@ -9,7 +9,7 @@ slider:
  - /assets/placeholder-250.jpg
  - /assets/placeholder-250.jpg
 link: https://www.gebrvdpoel.nl/
-design: Windkracht 10
+design: <a href="https://windkracht-10.nl/" target="_blank">Windkracht 10</a>
 
 ---
 

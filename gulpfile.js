@@ -62,6 +62,7 @@ gulp.task('images-scale', () => {
         quality: 80,
         progressive: true,
         withMetadata: false,
+        withoutEnlargement: false
       }))
       .pipe(gulp.dest('./assets/optimized/'));
   });

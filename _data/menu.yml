@@ -1,14 +1,11 @@
 
 menu:
 
-- title: Home
+- title: Over
   link: / 
 
 - title: Portfolio
   link: /portfolio.html
-
-- title: About me
-  link: /about.html
 
 - title: Referenties
   link: /referenties.html

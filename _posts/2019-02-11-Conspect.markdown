@@ -1,19 +1,19 @@
 ---
 
 layout: portfolio_detail
-title:  "Dobbe Transport"
+title:  "Conspect ICT"
 category: portfolio
-hero: dobbe-hero
+hero: conspect-hero
 slider: 
  - /assets/placeholder-250.jpg
  - /assets/placeholder-250.jpg
  - /assets/placeholder-250.jpg
-link: https://www.dobbetransport.com/
-design: <a href="https://windkracht-10.nl/" target="_blank">Windkracht 10</a>
+link: https://www.conspect.nl/
+design: <a href="https://inpetteau.nl/" target="_blank">Buro In Petteau</a>
 
 ---
 
-Website voor Dobbe Transport.
+Website voor Het Conspect ICT.
 
 Implementatie op basis van functioneel ontwerp en grafisch ontwerp.
 

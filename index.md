@@ -1,6 +1,5 @@
 ---
 layout: page 
-title: Peter van Sark
+title: Over Peter
 ---
 
-Will follow soon...
