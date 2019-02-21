@@ -531,7 +531,7 @@ main#body {
     }
 
   a.button {
-    margin: 10px 0px;
+    margin-top: 15px;
     padding: 10px 25px;
     background: #ccc;
     border-radius: 5px;
@@ -544,6 +544,7 @@ main#body {
 
   ul.details {
     list-style: none;
+    margin-top: 15px;
   }
 
 } // end main#body

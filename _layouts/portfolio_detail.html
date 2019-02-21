@@ -37,9 +37,11 @@ layout: default
         </li>
         {% endfor %}
     </ul> -->
-    
-    <a class="button" target="_blank" href="{{page.link}}">Bekijk de website</a>
-    
+   
+    {% if page.link.size > 0 %}
+        <a class="button" target="_blank" href="{{page.link}}">Bekijk de website</a>
+    {% endif %}
+
     <ul class="details">
         <li>Ontwerp door: {{page.design}}</li>
     </ul>
