@@ -361,6 +361,7 @@ section#slide {
       height: 50px;
       flex-direction: column;
       border-bottom: #dbdbdb solid 1px;
+      transition: height 0.8s ease 0.5s;
 
         button {
             width: 100vw;
@@ -369,15 +370,16 @@ section#slide {
         }
 
        nav {
-          transition: opacity 0.5s linear 0s, height 0.5s linear 1s;
+         // closing animation
+          transition: opacity 1s linear 0s, height 0.8s ease 0.5s;
           height: 0px;
           width: 100%;
             ul.menu {
               justify-content: space-around;
-              transition: opacity 0.5s linear 0s, height 0.5s linear 1s;
+              transition: opacity 1s linear 0s, height 0.8s ease 0.5s;
               // height: 300px;
               li {
-                transition: opacity 0.5s linear 0s, height 0.5s linear 1s;
+                transition: opacity 1s linear 0s, height 0.8s ease 0.5s;
                 text-align: center;
                   a {
 
@@ -387,12 +389,14 @@ section#slide {
       }
 
         &.open {
+          // opening animation
             height: 350px;
+            transition: height 0.8s ease 0.8s;
             nav {
-              transition: opacity 0.5s linear 0.5s;
+              transition: opacity 0.5s linear 1s, height 0s ease 0.8s;
               height: 300px;
                 ul.menu {
-                  transition: opacity 0.5s linear 0.5s;
+                  transition: opacity 0.5s linear 1s, height 0s ease 0.8s;
                   height: 300px;
              }
           }
