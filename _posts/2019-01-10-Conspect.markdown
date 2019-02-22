@@ -10,10 +10,12 @@ slider:
  - /assets/placeholder-250.jpg
 link: https://www.conspect.nl/
 design: <a href="https://inpetteau.nl/" target="_blank">Buro In Petteau</a>
+tech: "HTML, CSS, Javascript, PHP"
+cms: Joomla
+werk: "Implementatie van grafisch ontwerp in CMS."
 
 ---
 
-Website voor Het Conspect ICT.
 
-Implementatie op basis van functioneel ontwerp en grafisch ontwerp.
+Conspect is een ICT-dienstverlener met veel expertise op het gebied van Oracle, Java, Business Intelligence en Business Analytics.
 

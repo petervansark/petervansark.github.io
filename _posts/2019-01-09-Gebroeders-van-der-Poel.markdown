@@ -10,10 +10,14 @@ slider:
  - /assets/placeholder-250.jpg
 link: https://www.gebrvdpoel.nl/
 design: <a href="https://windkracht-10.nl/" target="_blank">Windkracht 10</a>
+tech: "HTML, CSS, Javascript, PHP"
+cms: Joomla
+werk: "Implementatie van grafisch ontwerp in CMS."
 
 ---
 
-Website voor Gebroedrs van der Poel.
+Website Gebroedrs van der Poel.
 
-Implementatie op basis van functioneel ontwerp en grafisch ontwerp.
+Gebr. van der Poel is in 1965 ontstaan toen de 2 boerenzoons Bram en Dammes van der Poel de landbouwmachines, en 1 man personeel van hun vader overnamen.
+Vandaag de dag is het Hoogheemraadschap Rijnland een van de grootste opdrachtgevers. En is het werk in de grond- weg- en waterbouw toegenomen.
 

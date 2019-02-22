@@ -10,10 +10,10 @@ slider:
  - /assets/placeholder-250.jpg
 # link: https://www.ruitenfood.com/
 design: <a href="https://www.studiokluif.nl/" target="_blank">Studio Kluif</a>
+tech: "HTML, CSS, Javascript, PHP"
+cms: Joomla
+werk: "Implementatie van grafisch ontwerp in CMS."
 
 ---
 
-Website voor Siqura.
-
-Implementatie op basis van functioneel ontwerp en grafisch ontwerp.
-
+Siqura is een multinational opgericht in 1981 voor video en camera beveiligingssystemen.

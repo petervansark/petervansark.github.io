@@ -202,7 +202,7 @@ html {
     font-size: 100%;
     color: $font-color;
     font: $font-size helvetica,arial,freesans,clean,sans-serif;
-    line-height: 1.4;
+    line-height: 1.4rem;
 }
 
 a,
@@ -422,6 +422,11 @@ main#body {
   > article {
     text-align: left;
     padding: 2rem 4rem;
+
+    p {
+      margin-bottom:1rem;
+    }
+
   }
   > .mockup {
     margin-top: 2rem;

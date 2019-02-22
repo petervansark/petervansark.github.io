@@ -39,11 +39,14 @@ layout: default
     </ul> -->
    
     {% if page.link.size > 0 %}
-        <a class="button" target="_blank" href="{{page.link}}">Bekijk de website</a>
+        <a class="button" target="_blank" href="{{page.link}}">Bezoek website</a>
     {% endif %}
 
     <ul class="details">
-        <li>Ontwerp door: {{page.design}}</li>
+        <li>Verrichte werkzaamheden: {{ page.werk }}</li>
+        <li>Gebruikte technieken: {{ page.tech }}</li>
+        <!-- <li>CMS: {{ page.cms }}</li> -->
+        <li>Ontwerp: {{page.design}}</li>
     </ul>
     
 </article>
