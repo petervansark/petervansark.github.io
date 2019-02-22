@@ -10,5 +10,5 @@ menu:
 - title: Referenties
   link: /referenties.html
 
-- title: Contact
-  link: /contact.html
+# - title: Contact
+#   link: /contact.html
