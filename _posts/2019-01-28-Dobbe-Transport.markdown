@@ -13,6 +13,7 @@ design: <a href="https://windkracht-10.nl/" target="_blank">Windkracht 10</a>
 tech: "HTML, CSS, Javascript, PHP"
 cms: Joomla
 werk: "Implementatie van grafisch ontwerp in CMS."
+video: dobbe.mp4
 
 ---
 

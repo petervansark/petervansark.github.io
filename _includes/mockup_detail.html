@@ -1,12 +1,16 @@
 
 <section class="mockup">
-
+    {% if page.video.size > 0 %}
+    <video class="content" width="1000" height="660" loop muted autoplay poster="/assets/optimized/{{include.image}}-1000px.jpeg">
+        <source src="/assets/{{page.video}}" type="video/mp4">
+    </video>
+    {% else %}
     <picture>
-            <source srcset="/assets/optimized/{{include.image}}-1000px.jpeg, /assets/optimized/{{include.image}}-1500px.jpeg 2x" type="image/jpg">
-            <source srcset="/assets/optimized/{{include.image}}-1000px.webp, /assets/optimized/{{include.image}}-1500px.webp 2x" type="image/webp">
-            <img src="/assets/optimized/{{include.image}}-1000px.jpeg, /assets/optimized/{{include.image}}-1500px.jpeg 2x" class="content">
+        <source srcset="/assets/optimized/{{include.image}}-1000px.jpeg, /assets/optimized/{{include.image}}-1500px.jpeg 2x" type="image/jpg">
+        <source srcset="/assets/optimized/{{include.image}}-1000px.webp, /assets/optimized/{{include.image}}-1500px.webp 2x" type="image/webp">
+        <img src="/assets/optimized/{{include.image}}-1000px.jpeg, /assets/optimized/{{include.image}}-1500px.jpeg 2x" class="content">
     </picture> 
-    
+    {% endif %}
     <picture>
         <source srcset="/assets/optimized/macbook-screen-50per.png, /assets/optimized/macbook-screen-100per.png 2x" type="image/png">
         <source srcset="/assets/optimized/macbook-screen-50per.webp, /assets/optimized/macbook-screen-100per.webp 2x" type="image/webp">

@@ -539,6 +539,34 @@ main#body {
           border-radius: 10px;
         }
       }
+      video.content {
+        margin: 0 auto;
+        position: absolute;
+        max-height: 70vh;
+        // top: 1%;
+        top: 0;
+        left: 0;
+        right: 0;
+        // max-height: 640px;
+        max-width: 79%;
+        
+        @media (min-aspect-ratio: 5/3) and (max-height: 890px) {
+          max-width: 70%;
+          // padding: 0 10px;
+        }
+
+        // @media (orientation: portrait) {
+        //   max-width: 70%;
+        // }
+
+        height: 100%;
+        width: 80%;
+        // min-width: 80%;
+        // min-height: 100%;
+        z-index: 0;
+        // width: 100%;
+        border-radius: 10px; 
+      }
 
     }
 

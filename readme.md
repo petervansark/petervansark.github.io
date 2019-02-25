@@ -1,11 +1,27 @@
 ============= TODO ============== 
 
 [x] Jekyll portfolio layout
+
 [] responsive images / video's
-[] Ajax nav
-[] Ajax: update URL
+
 [] create content
-[] CSS Styling
-[] cross-browser/device testing
-[] caching setup and final opti
-[] transpile js?
+
+[x] CSS Styling
+
+[] favicon
+
+[] testing
+
+[] Ajax nav
+
+[] Ajax: update URL
+
+[] transpile js
+
+[] caching setup and final optimizations
+
+[] testing
+
+[] testing
+
+[] and testing
