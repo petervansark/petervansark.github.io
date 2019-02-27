@@ -13,6 +13,7 @@ design: <a href="https://inpetteau.nl/" target="_blank">Buro In Petteau</a>
 tech: "HTML, CSS, Javascript, PHP"
 cms: Joomla
 werk: "Implementatie van grafisch ontwerp in CMS."
+video: hhah.mp4
 
 ---
 

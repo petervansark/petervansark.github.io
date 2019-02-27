@@ -13,6 +13,7 @@ design: <a href="https://www.studiokluif.nl/" target="_blank">Studio Kluif</a>
 tech: "HTML, CSS, Javascript, PHP"
 cms: Joomla
 werk: "Implementatie van grafisch ontwerp in CMS."
+video: siqura.mp4
 
 ---
 
