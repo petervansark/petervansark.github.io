@@ -251,7 +251,17 @@ section#slide {
         @include animate();
       }
     }
-    
+    a > svg {
+      margin-right: 25px;
+      width: 35px;
+      height: 35px;
+      &:hover {
+          fill: #000;
+        }
+        fill: #666;
+        @include animate();
+    }
+  
     @media (min-width: $breakpoint) {
       height: 100vh;
       left: 0;
