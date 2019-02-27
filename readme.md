@@ -2,7 +2,7 @@
 
 [x] Jekyll portfolio layout
 
-[] responsive images / video's
+[x] responsive images / video's
 
 [] create content
 
