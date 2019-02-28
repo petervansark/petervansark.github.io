@@ -451,14 +451,46 @@ main#body {
         // line-height: 1.7rem;
       }
 
-      h3 {
+      h2 {
         margin-top: 1rem;
         margin-bottom: 1.5rem;
       }
 
-    }
+    } // end .page
 
+    &.referenties {
+      .content {
+        max-height: 100px;
+        overflow: hidden;
+        display: block;
+        transition: max-height 1s ease; 
+        position: relative;
+          &.open {
+            max-height: 1000px;
+            transition: max-height 1s ease; 
+        }
 
+      }
+      > p a.button {
+        margin-bottom: 4rem;
+      }
+
+      .content::after {
+            content: "";
+            background-image: linear-gradient(transparent, #fff);
+            display: block;
+            height: 150px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: height 1s ease; 
+          }
+          .content.open::after {
+            content: "";
+            height: 0px;
+          }
+    } // end .referenties
 
   }
   > .mockup {

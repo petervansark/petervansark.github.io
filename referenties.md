@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Referenties
+pageclass: referenties
 ---
 
-### Van Galen Design
+## Van Galen Design
 
+<div class="content" id="01" markdown="1">
 
 Goede samenwerkingspartners zijn schaars en ik ben er trots op, als grafisch vormgever, dat ik met jou, als professionele webbouwer, al acht sites heb vormgegeven! Van Jopke Kruyt zorginnovatie, Jobset, Molendier, Kloek, TJ-partners, Namas, Lodur tot ACS-technology.
 
@@ -25,10 +27,12 @@ Dus, kan je website beter? Bel mijn Peter
 Renate van Galen  
 [Van Galen Design](http://www.vangalendesign.eu/)
 
----
+</div>
+<a href="#"  class="button" onclick="leesMeer('01',this);">Bekijk referentie</a>
 
-### Narratus Multimedia
+## Narratus Multimedia
 
+<div class="content" id="02" markdown="1">
 
 Mijn website is essentieel voor mijn bedrijf. Potentiële klanten kunnen mijn werk erop bekijken en via blogs kan ik mijn doelgroep bereiken. Het grote voordeel van mijn site is dat ik hem zelf kan bijhouden. Ík bepaal de inhoud.
 
@@ -46,3 +50,37 @@ Peter is een vakman die doet wat hij belooft, biedt een topservice en ook nog ee
 
 Gerrit de Heus  
 [Narratus Multimedia](https://www.narratusmultimedia.nl)
+
+</div>
+
+<a href="#" class="button" onclick="leesMeer('02',this);">Bekijk referentie</a>
+
+
+<div class="content" id="03" markdown="1">
+
+## Team2win
+
+Ik kan een hele middag geconcentreerd met een WordPress website bezig zijn. Ik ben nu bezig met het maken van mijn 2e website en ik vergeet alles om mij heen.  
+Het spreekt voor zich dat ik een amateur ben, die niet gehinderd door enige kennis door middel van trial en error het een en ander voor elkaar krijgt.
+
+
+Regelmatig komt het voor dat ik een hele middag iets zit te proberen en dat het niet lukt. Ik kan de oplossing maar niet vinden en terwijl de rook uit mijn oren komt, mail ik Peter.  
+Om 15.16 uur. Om 15.33 uur mailt Peter mij met de mededeling: ik heb het opgelost. En dit was niet de enige keer dat hij mij weer op weg hielp.
+
+
+Voor mij is het duidelijk dat Peter een absolute expert is. En het is net of hij er wel plezier in heeft, in dat gerommel van mij.  
+Hij ondersteunt op een hele prettige manier. Hij zal je vragen altijd beantwoorden.
+
+
+Voor mij is Peter een betrouwbare expert, de rots in de branding, die jouw website de professionele uitstraling geeft die jouw bedrijf nodig heeft.
+
+
+Dus: Kan je website beter?  
+Bel Peter!
+
+Jacqueline van Oosterhout  
+[Team2win](http://www.team2win.nl)
+
+</div>
+
+<a href="#" class="button" onclick="leesMeer('03',this);">Bekijk referentie</a>
