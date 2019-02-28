@@ -590,6 +590,10 @@ main#body {
           // height: 95%;
         }
 
+        @media (max-width: $breakpoint) {
+          display: none !important;
+        }
+
         // @media (orientation: portrait) {
         //   max-width: 70%;
         // }
