@@ -4,7 +4,7 @@
 
 [x] responsive images / video's
 
-[] create content
+[x] create content
 
 [x] CSS Styling
 

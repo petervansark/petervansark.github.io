@@ -7,10 +7,12 @@ const menuToggle = () => {
 const leesMeer = (id, button) => {
     const blok = document.getElementById(id, button);
     blok.classList.toggle("open");
-    if (button.text == "Bekijk referentie") {
-        button.innerHTML = "Sluit referentie";
+    button.classList.toggle("open");
+    if (button.text == "Open") {
+        console.log(button.text);
+        button.innerHTML = "Sluit";
     }
-    else if (button.text == "Sluit referentie") {
-        button.innerHTML = "Bekijk referentie";
+    else if (button.text == "Sluit") {
+        button.innerHTML = "Open";
     }
 }

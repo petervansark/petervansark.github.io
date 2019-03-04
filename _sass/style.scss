@@ -473,6 +473,19 @@ main#body {
       }
       > p a.button {
         margin-bottom: 4rem;
+        padding-right: 20px;
+        &:after {
+          transition: transform 1s ease;
+          content: "\02039";
+          transform: rotate(270deg);
+          font-size: 1.5rem;
+          display: inline-block;
+          margin: -15px 0px 0px 10px;
+        }
+        &.open:after {
+          transform: rotate(90deg);
+          margin: -15px 0px 0px 10px;
+        }
       }
 
       .content::after {

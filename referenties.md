@@ -28,7 +28,7 @@ Renate van Galen
 [Van Galen Design](http://www.vangalendesign.eu/)
 
 </div>
-<a href="#"  class="button" onclick="leesMeer('01',this);">Bekijk referentie</a>
+<a href="#" class="button" onclick="leesMeer('01',this);">Open</a>
 
 ## Narratus Multimedia
 
@@ -53,12 +53,13 @@ Gerrit de Heus
 
 </div>
 
-<a href="#" class="button" onclick="leesMeer('02',this);">Bekijk referentie</a>
+<a href="#" class="button" onclick="leesMeer('02',this);">Open</a>
 
 
-<div class="content" id="03" markdown="1">
 
 ## Team2win
+
+<div class="content" id="03" markdown="1">
 
 Ik kan een hele middag geconcentreerd met een WordPress website bezig zijn. Ik ben nu bezig met het maken van mijn 2e website en ik vergeet alles om mij heen.  
 Het spreekt voor zich dat ik een amateur ben, die niet gehinderd door enige kennis door middel van trial en error het een en ander voor elkaar krijgt.
@@ -83,4 +84,4 @@ Jacqueline van Oosterhout
 
 </div>
 
-<a href="#" class="button" onclick="leesMeer('03',this);">Bekijk referentie</a>
+<a href="#" class="button" onclick="leesMeer('03',this);">Open</a>
