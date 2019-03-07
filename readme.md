@@ -10,7 +10,7 @@
 
 [] favicon
 
-[] testing
+[x] testing
 
 [] Ajax nav
 
