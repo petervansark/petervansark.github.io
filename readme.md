@@ -8,22 +8,22 @@
 
 [x] CSS Styling
 
-[] favicon
+[ ] favicon
 
 [x] testing
 
-[] Ajax nav
+[x] Ajax nav
 
-[] Ajax: update URL
+[ ] Ajax: update URL
 
-[] transpile js
+[ ] transpile js
 
-[] caching setup and final optimizations
+[ ] caching setup and final optimizations
 
-[] cleanup code
+[ ] cleanup code
 
-[] testing
+[ ] testing
 
-[] testing
+[ ] testing
 
-[] and testing
+[ ] and testing
