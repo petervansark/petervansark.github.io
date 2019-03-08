@@ -49,6 +49,8 @@ const pagePlease = (link) => {
             const dezeHtml = inhoud.querySelector('main');
             pageCont.innerHTML = dezeHtml.innerHTML;
             xhrLinks();
+            const slide = document.getElementById('slide');
+            slide.classList.remove("open");
         })
         }
     )
