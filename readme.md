@@ -14,10 +14,6 @@
 
 [x] Ajax nav
 
-[ ] Ajax: update URL
-
-[ ] transpile js
-
 [ ] caching setup and final optimizations
 
 [ ] cleanup code
