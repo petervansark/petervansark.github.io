@@ -17,23 +17,18 @@ const leesMeer = (id, button) => {
     }
 }
 
-window.onload = function () {
+const xhrLinks = () => {
 
     const linkjes = document.querySelectorAll('a.xhr');
         
     for(i = 0; i <= linkjes.length-1; i++) {
-      linkjes[i].onclick = (link) => {
-        link.preventDefault();
-        // const linkData = link.target.getAttribute('data-page');
-        const linkData = link.target;
-        pagePlease(linkData);
+      linkjes[i].onclick = (el) => {
+        el.preventDefault();
+            const linkData = el.currentTarget;
+            pagePlease(linkData);
+        }
       }
-    };
-    
-    // console.log(linkjes);
-
-}
-
+};
 
 const pagePlease = (link) => {
 
@@ -45,7 +40,7 @@ const pagePlease = (link) => {
         function(response) {
         if (response.status !== 200) {
             console.log('Computer says no ' +
-            response.status);
+            response.status + ' on ' + link);
             return;
         }
 
@@ -53,12 +48,15 @@ const pagePlease = (link) => {
             const inhoud = parser.parseFromString(data, "text/html");
             const dezeHtml = inhoud.querySelector('main');
             pageCont.innerHTML = dezeHtml.innerHTML;
-        });
-
+            xhrLinks();
+        })
         }
     )
     .catch(function(err) {
         console.log('Oeps: ', err);
     });
-       
 }
+
+window.onload = function() {
+    xhrLinks();
+};
