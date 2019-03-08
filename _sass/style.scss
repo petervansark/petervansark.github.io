@@ -490,7 +490,7 @@ main#body {
 
       .content::after {
             content: "";
-            background-image: linear-gradient(transparent, #fff);
+            background-image: linear-gradient(rgba(255,255,255,0), #fff);
             display: block;
             height: 150px;
             width: 100%;
