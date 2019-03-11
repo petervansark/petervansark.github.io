@@ -669,11 +669,36 @@ main#body {
       background: #333;
       color: #fff;
     }
+
+
   }
 
   ul.details {
     list-style: none;
     margin-top: 15px;
+  }
+
+
+  a.terug {
+    margin-top: 15px;
+    padding: 5px 10px;
+    // font-size: 150%;
+    // font-weight: 600;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    &:before {
+      font-size: 130%;
+      margin-right:6px;
+      content: "\02039";
+    }
+  }
+  a.terug:hover {
+    border: solid 1px #ccc;
+    color: #333;
+    background: #ccc;
+    &:before {
+      color: #333;
+    }
   }
 
 } // end main#body
