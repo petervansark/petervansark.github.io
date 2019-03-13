@@ -17,6 +17,11 @@ const leesMeer = (id, button) => {
     }
 }
 
+const fade = () => {
+    const slide = document.getElementById('body');
+    slide.classList.toggle("fade"); 
+}
+
 const xhrLinks = () => {
 
     const linkjes = document.querySelectorAll('a.xhr');
@@ -25,7 +30,15 @@ const xhrLinks = () => {
       linkjes[i].onclick = (el) => {
         el.preventDefault();
             const linkData = el.currentTarget;
-            pagePlease(linkData);
+            Promise.resolve()
+            .then( () => {
+                fade();
+            })
+            .then( () => {
+                setTimeout( () => {pagePlease(linkData)},500);
+            }, error => {
+                console.log('Kon pagina niet laden');
+            });
         }
       }
 };
@@ -47,10 +60,20 @@ const pagePlease = (link) => {
         response.text().then(function(data) {
             const inhoud = parser.parseFromString(data, "text/html");
             const dezeHtml = inhoud.querySelector('main');
-            pageCont.innerHTML = dezeHtml.innerHTML;
-            xhrLinks();
-            const slide = document.getElementById('slide');
-            slide.classList.remove("open");
+            Promise.resolve()
+            .then( () => {
+                pageCont.innerHTML = dezeHtml.innerHTML;
+            })
+            .then( () => {
+                xhrLinks();
+            })
+            .then( () => {
+                const slide = document.getElementById('slide');
+                slide.classList.remove("open");
+            })
+            .then( () => {
+                setTimeout( () => { fade() }, 500)
+            });
         })
         }
     )

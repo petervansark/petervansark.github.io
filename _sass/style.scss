@@ -424,6 +424,12 @@ main#body {
   flex-direction: column;
   min-height: 100vh;
   padding-left: 50px;
+  transition: opacity 0.5s linear; 
+
+  &.fade {
+    opacity: 0;
+    transition: opacity 0.5s linear; 
+  }
 
   @media (max-width: $breakpoint - 1) {
     padding-left: 0px;
