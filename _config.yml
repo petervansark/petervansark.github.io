@@ -18,5 +18,6 @@ exclude:
   - _sass
   - assets/src
 
- plugins:
+plugins:
   - jemoji
+  
