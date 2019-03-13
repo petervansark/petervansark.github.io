@@ -62,6 +62,7 @@ const pagePlease = (link) => {
             const dezeHtml = inhoud.querySelector('main');
             Promise.resolve()
             .then( () => {
+                scroll(0,0);
                 pageCont.innerHTML = dezeHtml.innerHTML;
             })
             .then( () => {
