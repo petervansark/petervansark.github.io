@@ -581,6 +581,11 @@ main#body {
     img {
       max-width: 100%;
       display: block;
+      &[alt="Peter"],&[alt="logo"] {
+        // width: 200px;
+        float: right;
+        margin: 15px;
+      }
     }
 
     .mockup {

@@ -8,7 +8,7 @@
 
 [x] CSS Styling
 
-[ ] favicon
+[x] favicon
 
 [x] testing
 
@@ -16,7 +16,7 @@
 
 [ ] caching setup and final optimizations
 
-[ ] cleanup code
+[ ] cleanup code & uglify
 
 [ ] testing
 

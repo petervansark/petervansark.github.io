@@ -8,6 +8,8 @@ pageclass: referenties
 
 <div class="content" id="01" markdown="1">
 
+![logo](/assets/VGD_logo.jpg)
+
 Goede samenwerkingspartners zijn schaars en ik ben er trots op, als grafisch vormgever, dat ik met jou, als professionele webbouwer, al acht sites heb vormgegeven! Van Jopke Kruyt zorginnovatie, Jobset, Molendier, Kloek, TJ-partners, Namas, Lodur tot ACS-technology.
 
 
@@ -33,6 +35,8 @@ Renate van Galen
 ## Narratus Multimedia
 
 <div class="content" id="02" markdown="1">
+
+![logo](/assets/narratus_logo.jpg)
 
 Mijn website is essentieel voor mijn bedrijf. Potentiële klanten kunnen mijn werk erop bekijken en via blogs kan ik mijn doelgroep bereiken. Het grote voordeel van mijn site is dat ik hem zelf kan bijhouden. Ík bepaal de inhoud.
 
@@ -60,6 +64,8 @@ Gerrit de Heus
 ## Team2win
 
 <div class="content" id="03" markdown="1">
+
+![logo](/assets/team2win_logo.png)
 
 Ik kan een hele middag geconcentreerd met een WordPress website bezig zijn. Ik ben nu bezig met het maken van mijn 2e website en ik vergeet alles om mij heen.  
 Het spreekt voor zich dat ik een amateur ben, die niet gehinderd door enige kennis door middel van trial en error het een en ander voor elkaar krijgt.

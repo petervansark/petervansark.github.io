@@ -17,3 +17,6 @@ exclude:
   - .gitignore
   - _sass
   - assets/src
+
+  plugins:
+  - jemoji
