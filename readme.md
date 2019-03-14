@@ -10,5 +10,3 @@ Front-end developerwith almost 20 years experience building websites en webappli
 **Frameworks:**  
 ```Vanilla JS, Bootstrap, Vue.js```
 
-**Offline:**  
-:family_man_woman_girl_girl: :seedling: :book: ![8bit](/assets/mario_8bit.png) 

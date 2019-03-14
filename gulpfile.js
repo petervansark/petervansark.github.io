@@ -3,9 +3,12 @@ const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-var browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync').create();
 const shell = require('gulp-shell');
 const responsive = require('gulp-responsive');
+const uglify = require('gulp-uglifyes');
+const rename = require("gulp-rename");
+// const babel = require('gulp-babel');
 
 sass.compiler = require('node-sass');
 
@@ -114,21 +117,35 @@ gulp.task('jekyll-build', shell.task(['jekyll build --watch --incremental']));
 
 gulp.task('css', () => {
 return gulp.src('./_sass/**/*.scss')
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
         cascade: false
     }))
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest('./css/'))
 });
+
+gulp.task('uglify', () => {
+    return gulp.src('./_includes/main.js')
+    // .pipe(babel({
+    //     presets: ['es2015']
+    //   }))
+    .pipe(rename("main.min.js"))
+    .pipe(uglify({ 
+        mangle: false, 
+        ecma: 6 
+     }))
+    .pipe(gulp.dest('./_includes/'))
+  });
 
 gulp.task('watch', () => {
     
     gulp.watch('./_sass/**/*.scss', gulp.series('css'));
-    gulp.watch("_site/**/*.*").on('change', browserSync.reload);
+    gulp.watch('./_includes/main.js', gulp.series('uglify'));
+    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 
 });
 

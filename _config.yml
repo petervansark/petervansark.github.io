@@ -20,4 +20,5 @@ exclude:
 
 plugins:
   - jemoji
+  - jekyll-include-cache
   
