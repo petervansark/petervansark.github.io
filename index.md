@@ -26,7 +26,7 @@ Hoewel ik affiniteit heb met back-end development, ligt mijn focus op front-end 
 ```Vanilla JS, Bootstrap, Vue.js```
 
 **Offline:**  
-:family: :seedling: :recycle: :book: :space_invader: 
+:family_man_woman_girl_girl: :seedling: :book: ![8bit](/assets/mario_8bit.png) 
 
 **Sterke punten:**   
 Communicatief, punctueel en efficiënt

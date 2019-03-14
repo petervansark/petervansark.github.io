@@ -586,8 +586,11 @@ main#body {
         float: right;
         margin: 15px;
       }
-      &.emoji {
+      &.emoji,&[alt="8bit"] {
         display: inline;
+        width: 32px;
+        margin-right:5px;
+        height: auto;
       }
     }
 
