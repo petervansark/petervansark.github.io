@@ -4,8 +4,6 @@ title: Over Peter
 ---
 
 
-## Code + IDentity ##
-
 ![Code ID](assets/codeid.svg)
 
 **Bij Code ID zijn we een team van professionals die geloven in het leveren van kwaliteit.**
