@@ -8,11 +8,9 @@ title: Over Peter
 
 ![Code ID](assets/codeid.svg)
 
-Bij Code ID zijn we een team van professionals die geloven in het leveren van kwaliteit.
+**Bij Code ID zijn we een team van professionals die geloven in het leveren van kwaliteit.**
 
-**Een team om te vertrouwen**
-
-Wij zijn al meer dan 20 jaar werkzaam in deze branche en weten wat er komt kijken om een aansprekende website of webapp te maken. We kennen de beste werkwijzen om ervoor te zorgen dat uw site responsief en snel is. En we zullen ervoor zorgen dat uw site SEO-vriendelijk is.
+Met meer dan 20 jaar ervaring in deze branche weten we wat er komt kijken om een aansprekende website of webapp te maken. We kennen de beste werkwijzen om ervoor te zorgen dat uw site responsief en snel is. En we zullen ervoor zorgen dat uw site SEO-vriendelijk is.
 
 **Technische vaardigheden die je nodig hebt**
 
