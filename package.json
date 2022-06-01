@@ -32,6 +32,6 @@
     "gulp-uglify": "^3.0.2",
     "gulp-uglifyes": "^0.2.1",
     "node-sass": "^4.13.1",
-    "sharp": "^0.21.3"
+    "sharp": "^0.30.5"
   }
 }
